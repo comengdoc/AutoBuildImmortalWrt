@@ -83,8 +83,8 @@ PACKAGES="$PACKAGES luci-i18n-nikki-zh-cn"
 # 酷猫主题 by sirpdboy 
 #PACKAGES="$PACKAGES luci-theme-kucat"
 # 网络测速 by sirpdboy 
-#PACKAGES="$PACKAGES luci-app-netspeedtest"
-#PACKAGES="$PACKAGES luci-i18n-netspeedtest-zh-cn"
+PACKAGES="$PACKAGES luci-app-netspeedtest"
+PACKAGES="$PACKAGES luci-i18n-netspeedtest-zh-cn"
 
 # 构建镜像
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Building image with the following packages:"
