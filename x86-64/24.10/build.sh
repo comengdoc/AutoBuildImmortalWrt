@@ -40,16 +40,16 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') - 开始构建固件..."
 # 定义所需安装的包列表 下列插件你都可以自行删减
 PACKAGES=""
 PACKAGES="$PACKAGES curl"
-PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
+#PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 #24.10
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
-PACKAGES="$PACKAGES luci-app-openclash"
-PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
+#PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
+#PACKAGES="$PACKAGES luci-app-openclash"
+#PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 # 文件管理器
@@ -62,13 +62,13 @@ PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
 # istore商店
 #PACKAGES="$PACKAGES luci-app-store"
 # 首页和网络向导
-#PACKAGES="$PACKAGES luci-i18n-quickstart-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-quickstart-zh-cn"
 # 去广告adghome
 #PACKAGES="$PACKAGES luci-app-adguardhome"
 # 代理相关
 #PACKAGES="$PACKAGES luci-app-ssr-plus"
 #PACKAGES="$PACKAGES luci-app-passwall2"
-#PACKAGES="$PACKAGES luci-i18n-nikki-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-nikki-zh-cn"
 # VPN
 #PACKAGES="$PACKAGES luci-app-tailscale"
 #PACKAGES="$PACKAGES luci-i18n-tailscale-zh-cn"
@@ -78,8 +78,8 @@ PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
 # 酷猫主题 by sirpdboy 
 #PACKAGES="$PACKAGES luci-theme-kucat"
 # 网络测速 by sirpdboy 
-#PACKAGES="$PACKAGES luci-app-netspeedtest"
-#PACKAGES="$PACKAGES luci-i18n-netspeedtest-zh-cn"
+PACKAGES="$PACKAGES luci-app-netspeedtest"
+PACKAGES="$PACKAGES luci-i18n-netspeedtest-zh-cn"
 
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
