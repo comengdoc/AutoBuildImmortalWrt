@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 
 BASE_DIR="extra-packages"
 TEMP_DIR="$BASE_DIR/temp-unpack"
